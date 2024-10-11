@@ -1,0 +1,61 @@
+-- Tips dan Trick Bootstrap --
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+--> Navbar <--
+
+Here’s what you need to know before getting started with the navbar:
+
+1. Navbars require a wrapping .navbar with .navbar-expand{-sm|-md|-lg|-xl|-xxl} for responsive collapsing and color scheme classes.
+2. Navbars and their contents are fluid by default. Change the container to limit their horizontal width in different ways.
+3. Use our spacing and flex utility classes for controlling spacing and alignment within navbars.
+4. Navbars are responsive by default, but you can easily modify them to change that. Responsive behavior depends on our Collapse JavaScript plugin.
+5. Ensure accessibility by using a <nav> element or, if using a more generic element such as a <div>, add a role="navigation" to every navbar to 
+   explicitly identify it as a landmark region for users of assistive technologies.
+6. Indicate the current item by using aria-current="page" for the current page or aria-current="true" for the current item in a set.
+7. New in v5.2.0: Navbars can be themed with CSS variables that are scoped to the .navbar base class. .navbar-light has been deprecated and 
+   .navbar-dark has been rewritten to override CSS variables instead of adding additional styles.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+--> Margin dan Padding <--
+
+The classes are named using the format {property}{sides}-{size} for xs and {property}{sides}-{breakpoint}-{size} for sm, md, lg, xl, and xxl.
+
+Where property is one of:
+m - for classes that set margin
+p - for classes that set padding
+
+Where sides is one of:
+t - for classes that set margin-top or padding-top
+b - for classes that set margin-bottom or padding-bottom
+s - (start) for classes that set margin-left or padding-left in LTR, margin-right or padding-right in RTL
+e - (end) for classes that set margin-right or padding-right in LTR, margin-left or padding-left in RTL
+x - for classes that set both *-left and *-right
+y - for classes that set both *-top and *-bottom
+blank - for classes that set a margin or padding on all 4 sides of the element
+
+Where size is one of:
+0 - for classes that eliminate the margin or padding by setting it to 0
+1 - (by default) for classes that set the margin or padding to $spacer * .25
+2 - (by default) for classes that set the margin or padding to $spacer * .5
+3 - (by default) for classes that set the margin or padding to $spacer
+4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+5 - (by default) for classes that set the margin or padding to $spacer * 3
+auto - for classes that set the margin to auto
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+--> Positions <--
+
+Arrange elements easily with the edge positioning utilities. The format is {property}-{position}.
+
+Where property is one of:
+top - for the vertical top position
+start - for the horizontal left position (in LTR)
+bottom - for the vertical bottom position
+end - for the horizontal right position (in LTR)
+
+Where position is one of:
+0 - for 0 edge position
+50 - for 50% edge position
+100 - for 100% edge position
+
+---------------------------------------------------------------------------------------------------------------------------------------------------

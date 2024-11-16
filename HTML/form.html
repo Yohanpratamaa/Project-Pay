@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML</title>
+</head>
+<body>
+    <!-- Form di html banyak kegunaannya seperti input, textarea,select dll-->
+    <!-- Untuk radiobox jika ingin memilih salah satu ditambahkan atribut yaitu name -->
+    <!-- Jika ingin memilih lebih dari satu menggunakan checkbox -->
+    <!-- Untuk pertombolan jangan menggunakan submit melainkan menggunakan <button> -->
+
+    <form action="">
+        <table cellspacing="0" cellpadding="5">
+            <tr>
+                <td><label for="username">Username: </label> </td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password :  </label>
+                    <input type="password" id="password">
+                </td>
+            <tr>
+                <td>
+                    <b>Jenis Kelamin: </b>
+                </td>
+                <td>
+                    <input type="radio" id="pria" name="jeniskelamin">
+                    <label for="pria">Pria</label>
+                    <input type="radio" id="wanita" name="jeniskelamin">
+                    <label for="wanita">Wanita</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="maingame">
+                    <label for="maingame">Main Game</label>
+                    <input type="checkbox" id="memasak">
+                    <label for="memasak">Memasak</label>
+                    <input type="checkbox" id="menyanyi">
+                    <label for="menyanyi">Menyanyi</label>
+                    <input type="checkbox" id="mainbola">
+                    <label for="mainbola">Main Bola</label>
+                </td>
+            </tr>
+            <!-- Text area digunakan untuk menulis lebih banyak kotak -->
+            <tr>
+                <td colspan="2" align="center">
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <select name="" id="">
+                        <option value="">Bandung</option>
+                        <option value="">Jakarta</option>
+                        <option value="">Blitar</option>
+                    </select>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="2" align="center">
+                    <button type="submit">Kirim</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

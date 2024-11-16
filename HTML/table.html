@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML</title>
+</head>
+<body>
+    <!-- Tabel berisi kolom dan baris, baris yang horizontal ke kanan dan kolom yang vertikal ke bawah --> 
+    <!-- baris direpresentasikan dengan <tr> dan <td> sebagai kolom-->
+        <!-- Sintaksnya adalah table, tr dlu habis itu td -->
+        <p>Ini adalah contoh table sederhana</p>
+        <table>
+            <tr>
+                <td>(baris 1, kolom 1)</td>
+                <td>(baris 1, kolom 2)</td>
+            </tr>
+            <tr>
+                <td>(baris 2, kolom 1)</td>
+                <td>(baris 2, kolom 2)</td>
+            </tr>
+        </table>
+        <hr>
+
+        <!-- Di dalam table complex terdapat tambahan dalam header yaitu <thead> sebagai header dan <tbody> sebagai isi dari table tersebut -->
+        <p>Ini adalah contoh table komplex</p>
+        <table >
+            <thead>
+                <th></th>
+                <th>Kolom 1</th>
+                <th>Kolom 2</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Baris 1</th>
+                    <td>(Baris 1, kolom 1)</td>
+                    <td>(Baris 1, kolom 2)</td>
+                </tr>
+                <tr>
+                    <th>Baris 2</th>
+                    <td>(Baris 2, kolom 1)</td>
+                    <td>(Baris 2, kolom 2)</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <br>
+        <!-- Table merging adalah menggabungkan dua cell menjadi satu -->
+        <!-- colspan='' digunakan untuk menggabungkan cel secara horizontal, di dalam petik menyatakan berapa banyak cell yang digabungkan, collspan yang digabungkan yaitu per kolom <td> nya saja-->
+        <!-- rowspan='' digunakan untuk menggabungkan cel secara vertikal, di dalam petik menyatakan berapa banyak cell yang digabungkan, rowspan yang digabungkan yaitu per baris <tr>-->
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td rowspan="3">Rowspan 3</td>
+                <td colspan="2">Colspan 2</td>
+            </tr>
+            <tr>
+                <td>2,2</td>
+                <td>2,3</td>
+            </tr>
+            <tr>
+                <td>3,2</td>
+                <td>3,3</td>
+            </tr>
+        </table>
+        <hr>
+        <br>
+        <!-- Latihan -->
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td>1,1</td>
+                <td>1,2</td>
+                <td>1,3</td>
+                <td>1,4</td>
+            </tr>
+            <tr>
+                <td>2,1</td>
+                <td colspan="2" rowspan="2"></td>
+                <td>2,4</td>
+            </tr>
+            <tr>
+                <td>3,1</td>
+                <td>3,4</td>
+            </tr>
+            <tr>
+                <td>4,1</td>
+                <td>4,2</td>
+                <td>4,3</td>
+                <td>4,4</td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <td colspan="4">1,1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">1,2</td>
+                <td>2,2</td>
+                <td>2,3</td>
+                <td rowspan="2">2,4</td>
+            </tr>
+            <tr>
+                <td>3,2</td>
+                <td>3,3</td>
+
+            </tr>
+            <tr>
+                <td colspan="4">4,1</td>
+            </tr>
+        </table>
+</body>
+</html>
